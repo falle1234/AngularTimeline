@@ -25,4 +25,14 @@ describe('EventPageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should contain empty events array', () =>{
+    expect(component.events.length).toEqual(0);
+  });
+
+  it('should contain nonempty events array when set', () =>{
+    component.events = [{type:"test", description: "test",id:1}];
+    fixture.detectChanges();
+    expect(component.events.length).toEqual(1);
+  });
 });
