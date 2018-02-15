@@ -1,5 +1,5 @@
 export class EventItem {
     type: string;
-    decription: string;
+    description: string;
     id: number;
 }

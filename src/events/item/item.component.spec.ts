@@ -16,7 +16,7 @@ describe('EventItemComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(EventItemComponent);
     component = fixture.componentInstance;
-    component.item = {type: 'TESTTYPE',  decription: 'DESCRIPTION', id: 1337};
+    component.item = {type: 'TESTTYPE',  description: 'DESCRIPTION', id: 1337};
     fixture.detectChanges();
   });
 

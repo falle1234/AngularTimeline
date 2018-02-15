@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ListComponent } from '../list/list.component';
-
-import { EVENTS } from '../data/events';
+import { EventItem } from '../models/eventItem';
+import { EventsService } from '../service/events.service';
 
 @Component({
   selector: 'events-page',
@@ -10,10 +10,10 @@ import { EVENTS } from '../data/events';
 })
 export class PageComponent implements OnInit {
 
-  events = EVENTS;
-  constructor() { }
+  events: EventItem[];
+  constructor(private eventService: EventsService) { }
 
   ngOnInit() {
+    this.eventService.getAllEvents().subscribe(events => this.events = events);
   }
-
 }
