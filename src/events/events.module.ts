@@ -5,6 +5,7 @@ import { ListComponent } from './list/list.component';
 import { PageComponent } from './page/page.component';
 import { ItemComponent } from './item/item.component';
 import { EventsService } from './service/events.service';
+import { SliderComponent } from './slider/slider.component';
 export { PageComponent } from './page/page.component';
 
 @NgModule({
@@ -15,7 +16,8 @@ export { PageComponent } from './page/page.component';
   declarations: [
     ListComponent,
     PageComponent,
-    ItemComponent
+    ItemComponent,
+    SliderComponent
   ]
 })
 export class EventsModule { }

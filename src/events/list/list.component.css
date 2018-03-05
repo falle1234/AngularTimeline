@@ -1,0 +1,8 @@
+:host {
+    float: left;
+    width: 80%;
+    height: 90vh;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: visible;
+}
